@@ -94,6 +94,9 @@ main{
 
 .category1,.category2, .category3{
     height: max-content;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
 }
 
 .nadpis{
@@ -101,6 +104,7 @@ main{
     font-size: 25px;
     color:black;
     margin-top:15px;
+    text-align: center;
 }
 
 
@@ -111,6 +115,8 @@ main{
     grid-template-rows: 110px 290px;
     grid-template-columns: repeat(3,1fr);
     padding-bottom: 10px;
+    justify-content: center;
+    align-content: center;
 }
 
 .hity .nazv{
@@ -122,13 +128,7 @@ main{
     align-self:center ;
 }
 
-.button1{
-    transform: translateX(50px);
-    
-}
-.button2{
-    transform: translateX(-50px);
-}
+
 
 
 .kartinki{
@@ -175,5 +175,5 @@ main{
 }
 
 .button-catalog button:hover a{
-    text-shadow: 0px 0px 10px rgb(255, 255, 0);
+    text-shadow: 0px 0px 10px rgb(160, 33, 33);
 }
