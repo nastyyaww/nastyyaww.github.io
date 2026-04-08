@@ -23,13 +23,22 @@ header, footer{
     align-content:center;
 }
 
-.burger-menu{
+#burger-menu{
 font-size:50px;
 font-weight: 50;
 margin-right: 10px;
 }
 
-
+.burger-menu{
+    display: none; /*flex*/
+    justify-self: flex-end;
+    height: 500px;
+    width: 200px;
+    background-image: url(pictures/цветы.jpg);
+    position:sticky;
+    
+    
+}
 main{
     display:grid;
     grid-row-gap: 15px;

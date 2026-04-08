@@ -1,0 +1,9 @@
+body{
+    background-image: url(pictures/1.jpg);
+    height: max-content;
+    margin-top:0;
+    background-size: cover; /* Изображение всегда покрывает весь элемент */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
