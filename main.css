@@ -15,6 +15,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    overflow-x: hidden;
 }
 
 header, footer{
@@ -29,20 +30,49 @@ font-weight: 50;
 margin-right: 10px;
 }
 
+input{
+    visibility: hidden;
+    position: absolute;
+
+}
+label{
+    display: flex;
+    top:5px;
+    margin-right: 10px;
+    justify-self:right;
+    font-size:60px;
+    position: absolute;
+    z-index: 10;
+    transition: all 3s linear ease;
+}
 .burger-menu{
-    display: none; /*flex*/
+    display: flex; /*flex*/
     justify-self: flex-end;
-    height: 500px;
-    width: 200px;
-    background-image: url(pictures/цветы.jpg);
-    position:sticky;
-    
-    
+    height: 100px;
+    width: 2000px;
+    background-image: url(pictures/roses.jpg);
+    background-size: contain; 
+    background-position: center;
+    position:absolute; 
+    z-index: 5;
+    opacity: 0;
+    transform:translateX(10px) translateY(-90px);
+    transition: all 3s linear ease;
+}
+
+input:checked~label{
+    position: relative;
+}
+input:checked~.burger-menu{
+    display:flex;
+    transform:translateX(10px) translateY(-90px);
+    opacity: 1;
 }
 main{
     display:grid;
     grid-row-gap: 15px;
     height: max-content;
+    margin-top: 20px;
 }
 
 .info > .nazvanie{
