@@ -7,11 +7,34 @@
     font-family: jsmath;
     src: url(text-style/jsmath-cmti10.ttf) format('truetype');
 }
+
+@media (max-width:1000px) {
+    body{
+        display: inline-block;
+    }
+    #burger-menu{
+        margin-right: 5px;
+    }
+    label{
+        transform: translateX(5px)!important;
+    }
+
+}
+
+@media (min-width:756px) {
+    .menu-links{
+        height: 8%;
+        transform: translateY(15px) !important;
+        font-size:20px;/*размеры текста*/
+    }
+}
 body{
+    
     background-image: url(pictures/1.jpg);
     height: max-content;
-    margin-top:0;
-    background-size: cover; /* Изображение всегда покрывает весь элемент */
+    margin:0;
+    padding: 0;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -41,13 +64,14 @@ label{
     margin-right: 10px;
     justify-self:right;
     font-size:60px;
+    transform: translateX(-20px);
     position: absolute;
     z-index: 10;
-    transition: all 3s linear ease;
+    /*transition: all 3s ease;*/
 }
 .burger-menu{
-    display: flex; /*flex*/
-    justify-self: flex-end;
+    display: none; /*flex*/
+   justify-self: flex-end;
     height: 100px;
     width: 2000px;
     background-image: url(pictures/roses.jpg);
@@ -56,10 +80,29 @@ label{
     position:absolute; 
     z-index: 5;
     opacity: 0;
-    transform:translateX(10px) translateY(-90px);
-    transition: all 3s linear ease;
+    transform: translateY(-90px);
+    transition: all 0.1s ease;
 }
 
+.menu-links{
+    display: flex;
+    position:fixed; /*sticky*/
+    width: 90%;
+    background-color: rgb(217, 116, 116);
+    justify-self: left;
+    top:10px;
+    left:10px;
+    z-index: 15;
+
+    justify-content: left;
+    align-self: center;
+}
+
+.menu-links span{
+    align-self: center;
+    padding: 0 20px 0 20px;
+    font-size: 15px;/*размеры текста*/
+}
 input:checked~label{
     position: relative;
 }
@@ -68,6 +111,7 @@ input:checked~.burger-menu{
     transform:translateX(10px) translateY(-90px);
     opacity: 1;
 }
+
 main{
     display:grid;
     grid-row-gap: 15px;
@@ -87,7 +131,7 @@ main{
 
 
 .info{
-    width:90%;
+    width:87%;
     height: 130px;
     justify-self:center;
     align-content: center;
@@ -128,7 +172,6 @@ main{
     height: 240px;
     width: 240px;
     object-position: 100% 20%;
-   /* object-fit:unset;*/
 }
 
 .category1,.category2, .category3{
@@ -166,9 +209,6 @@ main{
     justify-self: center;
     align-self:center ;
 }
-
-
-
 
 .kartinki{
     width: 420px;
@@ -215,4 +255,10 @@ main{
 
 .button-catalog button:hover a{
     text-shadow: 0px 0px 10px rgb(160, 33, 33);
+}
+
+footer{
+    height: 150px;
+    margin-top: 20px;
+    background-color: white;
 }
