@@ -1,9 +1,159 @@
+@font-face {
+    font-family: alice;
+    src: url(text-style/Alice.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: jsmath;
+    src: url(text-style/jsmath-cmti10.ttf) format('truetype');
+}
+
 body{
     background-image: url(pictures/1.jpg);
-    height: max-content;
+    width: 100%;
     margin-top:0;
     background-size: cover; /* Изображение всегда покрывает весь элемент */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    overflow-x: hidden;
+}
+
+header, footer{
+    height: 5%;
+    width: 100%;
+    justify-items: right;
+    align-content:center;
+}
+#burger-menu{
+font-size:50px;
+font-weight: 50;
+margin-right: 10px;
+}
+
+input{
+    visibility: hidden;
+    position: absolute;
+
+}
+label{
+    display: flex;
+    top:5px;
+    margin-right: 30px;
+    font-size:60px;
+    z-index: 10;
+}
+.burger-menu{
+    display: none; 
+    justify-self: flex-end;
+    height: 100px;
+    width: 2000px;
+    background-image: url(pictures/roses.jpg);
+    background-size: contain; 
+    background-position: center;
+
+    z-index: 5;
+    opacity: 0;
+    transform: translateY(-90px);
+    transition: all 0.1s ease;
+}
+
+.menu-links{
+    display: flex;
+    position:sticky;
+    width: 90vw;
+    justify-self: left;
+    top:10px;
+    left:10px;
+    z-index: 15;
+
+    justify-content: left;
+    align-self: center;
+}
+
+.menu-links a{
+    color: rgb(62, 5, 62);
+     transition: font-size 1s ease;
+}
+.menu-links a:hover{
+    font-size: 25px;
+}
+.menu-links span{
+    align-self: center;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+.menu-links span, label{
+    transform: translateY(10px);
+}
+input:checked~label{
+    position: relative;
+}
+input:checked~.burger-menu{
+    display:flex;
+    transform:translateX(10px) translateY(-90px);
+    opacity: 1;
+}
+
+main{
+    display:grid;
+    grid-row-gap: 15px;
+    height: max-content;
+}
+
+footer{
+    height: 150px;
+    justify-self: end;
+    margin-top: 50px;
+    transform: translateY(10px);
+    background-color: white;
+    
+}
+
+.nazv{
+    text-align: center;
+    font-size: 90px;
+    font-family: 'alice';
+    margin: 0;
+}
+.name{
+    font-family: 'alice';
+    font-size:40px;
+    margin:0 0 10px 30px;
+}
+.category button{
+   position: sticky;
+   transform: translateY(-30px);
+   opacity: 0.7;
+   background-color: plum;
+   border:0px;
+   font-size:18px;
+   color:white;
+   height: 50px;
+   width: 150px;
+   margin: 0 15%;
+   border-radius: 15px;
+   transition: all 1s ease;
+}
+
+.category button:hover{
+   position: sticky;
+   height: 70px;
+   width: 200px;
+   margin: 0 8%;
+   opacity: 0.9;
+}
+.category>div {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5,1fr);
+}
+
+
+div img{
+    height: 240px;
+    width: 240px;
+    object-fit: contain;
+    repeat:no-repeat;
 }

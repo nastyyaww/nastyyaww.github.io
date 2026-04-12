@@ -7,6 +7,125 @@
     <link href="katalog.css" rel="stylesheet">
 </head>
 <body>
-    <a href="main.html">главная</a>
+    <header>
+        <input type="checkbox" id="burger"> 
+        <label for="burger"><span>&#8801</span></label>
+        <div class="burger-menu">
+        <div class="menu-links">
+            <span><a href="main.html">главная</a></span>
+            <span><a href="">о нас</a></span>
+            <span><a href="">спецпредложения</a></span>
+            <span><a href="">полезные советы</a></span>
+            <span><a href="">связаться с нами</a></span>
+        </div></div>
+    </header>
+    <main>
+    <div class="catalog">
+        <div><p class="nazv">Каталог</p></div>
+        <div class="category">
+            <p class="name" id="bukety">Готовые букеты</p>
+            <div class="bukety">
+                <div class="b1">
+                    <img src="pictures/b1.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="b2">
+                    <img src="pictures/b2.png">
+                   <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="b3">
+                    <img src="pictures/b3.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="b4">
+                    <img src="pictures/b4.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="b5">
+                    <img src="pictures/b5.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+            </div>
+
+            <p class="name" id="svadebnie-bukety">Свадебные букеты</p>
+            <div class="svadebnie-bukety">
+                <div class="sb1">
+                    <img src="pictures/sb1.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="sb2">
+                    <img src="pictures/sb2.png">
+                   <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="sb3">
+                    <img src="pictures/sb3.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="sb4">
+                    <img src="pictures/sb4.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="sb5">
+                    <img src="pictures/sb5.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+            </div>
+
+            <p class="name" id="rasteniya">Комнатные растения</p>
+            <div class="rasteniya">
+                <div class="r1">
+                    <img src="pictures/r1.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="r2">
+                    <img src="pictures/r2.png">
+                   <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="r3">
+                    <img src="pictures/r3.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="r4">
+                    <img src="pictures/r4.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="r5">
+                    <img src="pictures/r5.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </main>
+    <footer></footer>
+
+
+    <script>   
+// Добавьте в ваш main.js
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerCheckbox = document.getElementById('burger');
+    const label = document.querySelector('label');
+    
+    if (burgerCheckbox && label) {
+        const originalSpan = label.querySelector('span');
+        
+        burgerCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                // Меняем на крестик
+                originalSpan.innerHTML = "&#215";
+                originalSpan.style.fontSize = '50px';
+                originalSpan.style.transform = 'translateY(-5px)';
+                originalSpan.style.display = 'inline-block';
+            } else {
+                // Меняем обратно на три полосы
+                originalSpan.innerHTML = '&#8801';
+                originalSpan.style.fontSize = '60px';
+                originalSpan.style.transform = 'none';
+            }
+        });
+    }
+});
+    </script>
 </body>
 </html>

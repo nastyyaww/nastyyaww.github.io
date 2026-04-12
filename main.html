@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet">
+    <link href="main-mobile.css" rel="stylesheet">
     <title>Главная</title>
 </head>
 <body>
     <header>
         <input type="checkbox" id="burger"> 
         <label for="burger"><span>&#8801</span></label>
-        <div class="burger-menu"></div>
+        <div class="burger-menu">
         <div class="menu-links">
             <span><a href="katalog.html">каталог</a></span>
             <span><a href="">о нас</a></span>
             <span><a href="">спецпредложения</a></span>
             <span><a href="">полезные советы</a></span>
             <span><a href="">связаться с нами</a></span>
-        </div>
+        </div></div>
     </header>
     <main>
         <div class="info">
@@ -29,15 +30,15 @@
                 <span class="nazvanie">популярные категории</span>
             </div>
             <div class="category1">
-               <div><img src="pictures/buket.jpg"> </div>
+               <div><a href="katalog.html#bukety"><img src="pictures/buket.jpg"></a> </div>
                <div><p class="nadpis">готовые букеты</p></div>
             </div>
             <div class="category2">
-                <div><img src="pictures/svadebnuy.jpg"> </div>
+                <div><a href="katalog.html#svadebnie-bukety"><img src="pictures/svadebnuy.jpg"></a></div>
                <div><p class="nadpis">свадебные композиции</p></div>
             </div>
             <div class="category3">
-                <div><img src="pictures/rasteniye.jpg"></div>
+                <div><a href="katalog.html#rasteniya"><img src="pictures/rasteniye.jpg"></a></div>
                <div><p class="nadpis">комнатные растения</p></div>
             </div>
         </div>
@@ -78,5 +79,6 @@
         </div>
     </main>
     <footer></footer>
+    <script src="main.js"></script>
 </body>
 </html>

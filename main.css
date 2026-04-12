@@ -8,28 +8,7 @@
     src: url(text-style/jsmath-cmti10.ttf) format('truetype');
 }
 
-@media (max-width:1000px) {
-    body{
-        display: inline-block;
-    }
-    #burger-menu{
-        margin-right: 5px;
-    }
-    label{
-        transform: translateX(5px)!important;
-    }
-
-}
-
-@media (min-width:756px) {
-    .menu-links{
-        height: 8%;
-        transform: translateY(15px) !important;
-        font-size:20px;/*размеры текста*/
-    }
-}
-body{
-    
+body{  
     background-image: url(pictures/1.jpg);
     height: max-content;
     margin:0;
@@ -67,17 +46,16 @@ label{
     transform: translateX(-20px);
     position: absolute;
     z-index: 10;
-    /*transition: all 3s ease;*/
 }
 .burger-menu{
-    display: none; /*flex*/
-   justify-self: flex-end;
+    display: none; 
+    justify-self: flex-end;
     height: 100px;
     width: 2000px;
     background-image: url(pictures/roses.jpg);
     background-size: contain; 
     background-position: center;
-    position:absolute; 
+    position:absolute;
     z-index: 5;
     opacity: 0;
     transform: translateY(-90px);
@@ -86,9 +64,8 @@ label{
 
 .menu-links{
     display: flex;
-    position:fixed; /*sticky*/
-    width: 90%;
-    background-color: rgb(217, 116, 116);
+    position:sticky;
+    width: 90vw;
     justify-self: left;
     top:10px;
     left:10px;
@@ -98,10 +75,20 @@ label{
     align-self: center;
 }
 
+.menu-links a{
+    color: rgb(62, 5, 62);
+     transition: font-size 1s ease;
+}
+.menu-links a:hover{
+    font-size: 25px;
+}
 .menu-links span{
     align-self: center;
     padding: 0 20px 0 20px;
-    font-size: 15px;/*размеры текста*/
+    font-size: 20px;
+}
+.menu-links span, label{
+    transform: translateY(10px);
 }
 input:checked~label{
     position: relative;
@@ -166,14 +153,17 @@ main{
     justify-self: center;
     align-content: center;
 }
-.category div > img{
+.category img{
     border-radius: 50%;
     object-fit: cover;
     height: 240px;
     width: 240px;
     object-position: 100% 20%;
+    transition:box-shadow 1s ease; 
 }
-
+.category img:hover{
+    box-shadow: 5px 5px 5px rgb(141, 125, 125);
+}
 .category1,.category2, .category3{
     height: max-content;
     justify-content: center;
@@ -234,7 +224,7 @@ main{
     font-family: 'alice';
     font-size: 25px;
     border-radius: 15px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 241, 223);
     border:1px solid rgb(117, 109, 109);
     transition: all  3s ease;
 }
@@ -261,4 +251,25 @@ footer{
     height: 150px;
     margin-top: 20px;
     background-color: white;
+}
+
+
+
+
+/*дж кнопки*/
+.kartinki img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.button1, .button2 {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button1:hover, .button2:hover {
+    transform: scale(1.05);
+}
+
+.button1:active, .button2:active {
+    transform: scale(0.95);
 }
