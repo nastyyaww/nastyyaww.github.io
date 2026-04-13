@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link href="about.css" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <input type="checkbox" id="burger"> 
+        <label for="burger"><span>&#8801</span></label>
+        <div class="burger-menu">
+        <div class="menu-links">
+            <span><a href="main.html">главная</a></span>
+            <span><a href="katalog.html">каталог</a></span>
+            <span><a href="">спецпредложения</a></span>
+            <span><a href="">связаться с нами</a></span>
+        </div></div>
+    </header>
+    <main>
+        <img src="pictures/r1.png" class="i1">
+        <img src="pictures/sb5.png" class="i2">
+        <img src="pictures/b5.png" class="i3">
+        <p class="info">
+        <span class="nazv">Pion.by</span> — <span>современный сервис доставки цветов по Беларуси</span>. Мы делаем акцент на качестве, свежести и дизайне.
+
+Наша миссия - <span>дарить радость и помогать выражать чувства через живые цветы</span>. Каждый заказ — это маленькое событие, к которому мы подходим с особым вниманием.</p>
+        <p class="spisok">Что мы предлагаем</p>
+        <ul>
+            <li>Готовые букеты и авторские композиции</li>
+            <li>Готовые букеты и авторские композиции</li>
+            <li>Комнатные растения с доставкой</li>
+            <li>Быстрая и бережная доставка</li>
+        </ul>
+
+        <p class="spisok">Почему выбирают нас</p>
+        <ul>
+            <li>Только свежие цветы</li>
+            <li>Внимание к деталям</li>
+            <li>Индивидуальный подход к каждому клиенту</li>
+        </ul>
+
+<p class="info">Мы создаём настроение с 2025 года. <span class="nazv">Pion.by</span> — это не просто магазин цветов, а место, где оживают эмоции. Название выбрано не случайно: пион — <span>символ нежности</span>, <span>процветания</span> и <span>счастливой любви</span>. Именно эти чувства мы вкладываем в каждый букет.
+
+Каждое утро мы начинаем с выбора самых свежих цветов, чтобы вы дарили только лучшее. Наши флористы — настоящие художники, которые превращают лепестки и зелень в <span>маленькие шедевры</span>. Мы работаем для тех, кто ценит красоту, качество и индивидуальный подход.
+
+Пусть ваш день станет ярче, а близкие почувствуют вашу заботу — вместе с <span class="nazv">Pion.by</span>. <span>&#128144</span></p>
+    </main>
+    <footer>
+         <p>© 2025 Pion.by | Все права защищены</p>
+        <p>Сайт создан с любовью к цветам &#127800</p>
+    </footer>
+
+    <script>   
+
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerCheckbox = document.getElementById('burger');
+    const label = document.querySelector('label');
+    
+    if (burgerCheckbox && label) {
+        const originalSpan = label.querySelector('span');
+        
+        burgerCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                // Меняем на крестик
+                originalSpan.innerHTML = "&#215";
+                originalSpan.style.fontSize = '90px';
+                originalSpan.style.display = 'inline-block';
+                  originalSpan.style.transform = 'translateY(0px)';
+            } else {
+                // Меняем обратно на три полосы
+                originalSpan.innerHTML = '&#8801';
+                originalSpan.style.fontSize = '90px';
+                originalSpan.style.transform = 'none';
+            }
+        });
+    }
+});
+    </script>
+</body>
+</html>

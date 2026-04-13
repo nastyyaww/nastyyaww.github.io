@@ -8,6 +8,16 @@
     src: url(text-style/jsmath-cmti10.ttf) format('truetype');
 }
 
+@keyframes l-r {
+    0%  {transform: rotate(0deg);}
+    25% {transform: rotate(25deg);}
+    75% {transform: rotate(-25deg);}
+}
+@keyframes r-l {
+    0%  {transform: rotate(0deg);}
+    25% {transform: rotate(-25deg);}
+    75% {transform: rotate(25deg);}
+}
 body{
     background-image: url(pictures/1.jpg);
     width: 100%;
@@ -20,13 +30,12 @@ body{
 }
 
 header, footer{
-    height: 5%;
+    height: 70px;
     width: 100%;
     align-content:center;
-}
-header{
     transform: translateY(-20px);
 }
+
 #burger-menu{
 font-size:50px;
 font-weight: 50;
@@ -43,8 +52,8 @@ label{
     top:5px;
     margin-right: 30px;
     font-size:90px;
-    justify-self: right;
     z-index: 10;
+    justify-self: right;
     padding-left: 10px;
 }
 .burger-menu{
@@ -103,62 +112,64 @@ main{
     display:grid;
     grid-row-gap: 15px;
     height: max-content;
+
 }
 
-footer{
-    height: 150px;
-    margin-top: 20px;
-    background-color: white;
-    color:#823845;
-    text-align: center;
-    font-size: 18px;
-    transform: translateY(20px);
+img{
+    height: 500px;
+    width: 230px;
+    object-fit: contain;
+    position: absolute;
+}
+.i1{
+    left: 55%;
+    top:25%;
+    animation: l-r 3s normal infinite;
+}
+.i2{
+    left: 75%;
+    top:43%;
+    animation: r-l 3s normal infinite;
+}
+.i3{
+    left: 60%;
+    top:60%;
+    animation: l-r 3s normal infinite;
+}
+
+main p{
+    font-family:'alice';
+    font-size: 30px;
+    text-align: justify;
+}
+ul{
+    font-family:'alice';
+    font-size: 30px;
+    margin-left: 50px;
+}
+.spisok{
+    margin: 0 0 0 20px;
+    font-weight: bold;
+}
+.info{
+    justify-self: center;
+    width: 80%;
+}
+main span{
+    color: #4B0082;
+    font-size:35px;
 }
 
 .nazv{
+    color: #3f016b;
+    text-shadow: 5px 5px 5px rgb(172, 247, 255);
+}
+footer{
+    height: 150px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: white;
+    color:#823845;
     text-align: center;
-    font-size: 90px;
-    font-family: 'alice';
-    margin: 0;
-}
-.name{
-    font-family: 'alice';
-    font-size:40px;
-    margin:0 0 10px 30px;
-}
-.category button{
-   position: sticky;
-   transform: translateY(-30px);
-   opacity: 0.7;
-   background-color: plum;
-   border:0px;
-   font-size:18px;
-   color:white;
-   height: 50px;
-   width: 150px;
-   margin: 0 15%;
-   border-radius: 15px;
-   transition: all 1s ease;
-}
-
-.category button:hover{
-   position: sticky;
-   height: 70px;
-   width: 200px;
-   margin: 0 8%;
-   opacity: 0.9;
-}
-.category>div {
-    display: grid;
-    width: 100%;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(5,1fr);
-}
-
-
-div img{
-    height: 240px;
-    width: 240px;
-    object-fit: contain;
-    repeat:no-repeat;
+    transform: translateY(20px);
 }

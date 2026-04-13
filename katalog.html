@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Каталог</title>
     <link href="katalog.css" rel="stylesheet">
 </head>
 <body>
@@ -13,9 +13,8 @@
         <div class="burger-menu">
         <div class="menu-links">
             <span><a href="main.html">главная</a></span>
-            <span><a href="">о нас</a></span>
+            <span><a href="about.html">о нас</a></span>
             <span><a href="">спецпредложения</a></span>
-            <span><a href="">полезные советы</a></span>
             <span><a href="">связаться с нами</a></span>
         </div></div>
     </header>
@@ -43,6 +42,27 @@
                 </div>
                 <div class="b5">
                     <img src="pictures/b5.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+
+                <div class="h1">
+                    <img src="pictures/h1.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="h2">
+                    <img src="pictures/h2.png">
+                   <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="h3">
+                    <img src="pictures/h3.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="h4">
+                    <img src="pictures/h4.png">
+                    <a href="zakaz.html"><button>Купить</button></a>
+                </div>
+                <div class="h5">
+                    <img src="pictures/h5.png">
                     <a href="zakaz.html"><button>Купить</button></a>
                 </div>
             </div>
@@ -98,11 +118,13 @@
         </div>
     </div>
     </main>
-    <footer></footer>
+    <footer>
+         <p>© 2025 Pion.by | Все права защищены</p>
+        <p>Сайт создан с любовью к цветам &#127800</p>
+    </footer>
 
 
     <script>   
-// Добавьте в ваш main.js
 document.addEventListener('DOMContentLoaded', function() {
     const burgerCheckbox = document.getElementById('burger');
     const label = document.querySelector('label');
@@ -114,13 +136,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.checked) {
                 // Меняем на крестик
                 originalSpan.innerHTML = "&#215";
-                originalSpan.style.fontSize = '50px';
-                originalSpan.style.transform = 'translateY(-5px)';
+                originalSpan.style.fontSize = '90px';
                 originalSpan.style.display = 'inline-block';
+                  originalSpan.style.transform = 'translateY(0px)';
             } else {
                 // Меняем обратно на три полосы
                 originalSpan.innerHTML = '&#8801';
-                originalSpan.style.fontSize = '60px';
+                originalSpan.style.fontSize = '90px';
                 originalSpan.style.transform = 'none';
             }
         });

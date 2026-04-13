@@ -1,5 +1,3 @@
-
-// Добавьте в ваш main.js
 document.addEventListener('DOMContentLoaded', function() {
     const burgerCheckbox = document.getElementById('burger');
     const label = document.querySelector('label');
@@ -11,28 +9,29 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.checked) {
                 // Меняем на крестик
                 originalSpan.innerHTML = "&#215";
-                originalSpan.style.fontSize = '50px';
-                originalSpan.style.transform = 'translateY(-5px)';
+                originalSpan.style.fontSize = '90px';
                 originalSpan.style.display = 'inline-block';
+                  originalSpan.style.transform = 'translateY(0px)';
             } else {
                 // Меняем обратно на три полосы
                 originalSpan.innerHTML = '&#8801';
-                originalSpan.style.fontSize = '60px';
+                originalSpan.style.fontSize = '90px';
                 originalSpan.style.transform = 'none';
             }
         });
     }
 });
 
-
 /*кнопки */
 // Ждём загрузки DOM
 document.addEventListener('DOMContentLoaded', function() {
     // Массив с путями к картинкам (добавьте свои)
     const images = [
-        "pictures/цветы.jpg",
-        "pictures/pion.jpg",
-        "pictures/roses.jpg",
+        "pictures/b2.png",
+        "pictures/h2.png",
+        "pictures/h3.png",
+        "pictures/h4.png",
+        "pictures/sb4.png"
         
     ];
     

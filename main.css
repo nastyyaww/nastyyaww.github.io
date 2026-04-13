@@ -8,12 +8,11 @@
     src: url(text-style/jsmath-cmti10.ttf) format('truetype');
 }
 
-body{  
+body{
     background-image: url(pictures/1.jpg);
-    height: max-content;
-    margin:0;
-    padding: 0;
-    background-size: cover;
+    width: 100%;
+    margin-top:0;
+    background-size: cover; /* Изображение всегда покрывает весь элемент */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -21,11 +20,15 @@ body{
 }
 
 header, footer{
-    height: 5%;
-    justify-items: right;
+    height: 70px;
+    width: 100%;
+    
     align-content:center;
 }
 
+header{
+    transform: translateY(-20px);
+}
 #burger-menu{
 font-size:50px;
 font-weight: 50;
@@ -40,12 +43,11 @@ input{
 label{
     display: flex;
     top:5px;
-    margin-right: 10px;
-    justify-self:right;
-    font-size:60px;
-    transform: translateX(-20px);
-    position: absolute;
+    justify-self: right;
+    margin-right: 30px;
+    font-size:90px;
     z-index: 10;
+    padding-left: 10px;
 }
 .burger-menu{
     display: none; 
@@ -55,7 +57,7 @@ label{
     background-image: url(pictures/roses.jpg);
     background-size: contain; 
     background-position: center;
-    position:absolute;
+
     z-index: 5;
     opacity: 0;
     transform: translateY(-90px);
@@ -103,7 +105,7 @@ main{
     display:grid;
     grid-row-gap: 15px;
     height: max-content;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .info > .nazvanie{
@@ -111,7 +113,7 @@ main{
     font-size:90px;
     margin: 0;
     font-family: 'Alice';
-    color:rgb(255, 238, 248);
+    color:rgb(253, 225, 241);
     -webkit-text-stroke: 1px rgb(63, 63, 63);
     text-shadow: 5px 6px 6px rgb(78, 172, 230) ;
 }
@@ -210,6 +212,7 @@ main{
 .kartinki > img{
     height: 100%;
     width: 100%;
+    object-fit: contain;
 }
 
 .button-catalog{
@@ -237,13 +240,13 @@ main{
    font-size: 35px;
 }
 
-.button-catalog button a{
+.button-catalog a button{
     text-decoration: none;
     color:black;
     transition: all  3s ease;
 }
 
-.button-catalog button:hover a{
+.button-catalog a button:hover{
     text-shadow: 0px 0px 10px rgb(160, 33, 33);
 }
 
@@ -251,6 +254,10 @@ footer{
     height: 150px;
     margin-top: 20px;
     background-color: white;
+    color:#823845;
+    text-align: center;
+    font-size: 18px;
+    transform: translateY(20px);
 }
 
 
