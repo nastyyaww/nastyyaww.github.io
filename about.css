@@ -18,6 +18,8 @@
     25% {transform: rotate(-25deg);}
     75% {transform: rotate(25deg);}
 }
+
+
 body{
     background-image: url(pictures/1.jpg);
     width: 100%;
@@ -32,10 +34,13 @@ body{
 header, footer{
     height: 70px;
     width: 100%;
+    
     align-content:center;
-    transform: translateY(-20px);
 }
 
+header{
+    transform: translateY(-20px);
+}
 #burger-menu{
 font-size:50px;
 font-weight: 50;
@@ -50,10 +55,10 @@ input{
 label{
     display: flex;
     top:5px;
+    justify-self: right;
     margin-right: 30px;
     font-size:90px;
     z-index: 10;
-    justify-self: right;
     padding-left: 10px;
 }
 .burger-menu{
@@ -112,7 +117,16 @@ main{
     display:grid;
     grid-row-gap: 15px;
     height: max-content;
-
+    margin-top: 35px;
+}
+footer{
+    height: 150px;
+    margin-top: 20px;
+    background-color: white;
+    color:#823845;
+    text-align: center;
+    font-size: 18px;
+    transform: translateY(20px);
 }
 
 img{
@@ -164,12 +178,4 @@ main span{
     color: #3f016b;
     text-shadow: 5px 5px 5px rgb(172, 247, 255);
 }
-footer{
-    height: 150px;
-    margin-top: 20px;
-    font-size: 18px;
-    background-color: white;
-    color:#823845;
-    text-align: center;
-    transform: translateY(20px);
-}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спецпредложения</title>
+    <link href="special.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="burger"> 
+        <label for="burger"><span>&#8801</span></label>
+        <div class="burger-menu">
+        <div class="menu-links">
+            <span><a href="main.html">главная</a></span>
+            <span><a href="katalog.html">каталог</a></span>
+            <span><a href="about.html">о нас</a></span>
+            <span><a href="">связаться с нами</a></span>
+        </div></div>
+    </header>
+    <main>
+    <div>
+        <div>
+            <img src="pictures/spec1.png">
+            <a href="zakaz.html"><button>Купить</button></a>
+            <p>
+                <span> Нежный сюрприз</span><br>
+                Очаровательный букет в розово‑белой гамме в паре с мягким плюшевым мишкой создаёт атмосферу тепла, заботы и искренних чувств. Идеально подходит для поздравления, для романтических моментов или служит приятным неожиданным подаркам.
+            </p>
+        </div>
+       
+        <div>
+            <img src="pictures/spec2.png">
+            <a href="zakaz.html"><button>Купить</button></a>
+            <p>
+                <span>Сладкое признание</span><br>
+                Букет алых роз в паре с сердечным набором шоколадных конфет — символ нежности и романтики. Идеально подходит для проявления любви или для особых моментов.
+            </p>
+        </div>
+        <div>
+            <img src="pictures/spec3.png">
+            <a href="zakaz.html"><button>Купить</button></a>
+                <p>
+                <span> Тепло и забота</span><br>
+               Нежная композиция из розовых и белых лилий, окружённая свечами и ангелом, символизирует спокойствие, любовь и поддержку. Идеально подходит для создания уюта и приятной атмосферы.
+            </p>
+        </div>
+        <div>
+            <img src="pictures/spec4.png">
+            <a href="zakaz.html"><button>Купить</button></a>
+            <p>
+                <span> Зелёная коллекция</span><br>
+                Подборка стильных комнатных растений в разных кашпо создаёт атмосферу уюта, свежести и природной гармонии. Такой набор отлично подходит для обновления декора, интерьера или заботе о доме.
+            </p>
+        </div>
+    </div>
+    </main>
+
+        <footer>
+         <p>© 2025 Pion.by | Все права защищены</p>
+        <p>Сайт создан с любовью к цветам &#127800</p>
+    </footer>
+
+
+    <script>   
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerCheckbox = document.getElementById('burger');
+    const label = document.querySelector('label');
+    
+    if (burgerCheckbox && label) {
+        const originalSpan = label.querySelector('span');
+        
+        burgerCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                // Меняем на крестик
+                originalSpan.innerHTML = "&#215";
+                originalSpan.style.fontSize = '90px';
+                originalSpan.style.display = 'inline-block';
+                  originalSpan.style.transform = 'translateY(0px)';
+            } else {
+                // Меняем обратно на три полосы
+                originalSpan.innerHTML = '&#8801';
+                originalSpan.style.fontSize = '90px';
+                originalSpan.style.transform = 'none';
+            }
+        });
+    }
+});
+    </script>
+</body>
+</html>

@@ -116,20 +116,10 @@ footer{
     font-size: 18px;
     transform: translateY(20px);
 }
-.nazv{
-    text-align: center;
-    font-size: 90px;
-    font-family: 'alice';
-    margin: 0;
-}
-.name{
-    font-family: 'alice';
-    font-size:40px;
-    margin:0 0 10px 30px;
-}
-.category button{
+
+button{
    position: sticky;
-   transform: translateY(-30px);
+   transform: translateY(180px);
    opacity: 0.7;
    background-color: plum;
    border:0px;
@@ -137,30 +127,39 @@ footer{
    color:white;
    height: 50px;
    width: 150px;
-   margin: 0 15%;
    border-radius: 15px;
    transition: all 1s ease;
 }
 
-.category button:hover{
-   position: sticky;
+ button:hover{
    background-color: rgb(218, 145, 218);
+   position: relative;
    height: 70px;
    width: 200px;
-   margin: 0 8%;
    opacity: 0.9;
 }
-.category>div {
-    display: grid;
-    width: 100%;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(5,1fr);
-}
-
 
 div img{
     height: 240px;
     width: 240px;
-    object-fit: contain;
-   
+    margin-left: 10px;
+    object-fit: contain;  
+}
+
+main p{
+    width: 70vw;
+    height: 20vh;
+    transform: translateX(-130px);
+    font-family: 'alice';
+    font-size:22px;
+}
+
+
+main p span{
+    font-weight: bold;
+    font-size:25px;
+}
+main > div div{
+    display: flex;
+    margin-top: 20px;
 }
