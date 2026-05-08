@@ -1,0 +1,16 @@
+@media(max-width: 768px){
+    .nazv{
+        font-size:50px;
+    }
+    .name{
+        font-size:30px!important;
+    }
+
+    .category>div {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+}
+
+}

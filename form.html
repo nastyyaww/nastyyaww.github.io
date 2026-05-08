@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link href="form.css" rel="stylesheet">
+     <link href="burger-menu.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="burger"> 
+        <label for="burger"><span>&#8801</span></label>
+        <div class="burger-menu">
+        <div class="vnetri">
+        <div class="logo"><a href="main.html"><img src="pictures/logo.png"></a></div>
+        <div class="menu-links">
+            <span><a href="main.html">Главная</a></span>
+            <span><a href="katalog.html">Каталог</a></span>
+            <span><a href="about.html">О нас</a></span>
+            <span><a href="special.html">Спецпредложения</a></span>
+        </div></div></div>
+    </header>
+
+    <main>
+        <div class="forma">
+            <div class="text">
+            <form>
+                <textarea placeholder="Написать сообщение разработчику"></textarea>
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Введите свой email" required>
+            </div>
+
+            <div class="rating">
+                <label for="rating">Оценка нашего сервиса</label>
+                <div class="stars">
+               <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="15,1.5 18.75,11.25 28.5,11.25 20.25,17.25 23.25,27 15,20.25 6.75,27 9.75,17.25 1.5,11.25 11.25,11.25" fill="#FFD700" stroke="gray" stroke-width="0.5"/>
+</svg>
+                <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="15,1.5 18.75,11.25 28.5,11.25 20.25,17.25 23.25,27 15,20.25 6.75,27 9.75,17.25 1.5,11.25 11.25,11.25" fill="#FFD700" stroke="gray" stroke-width="0.5"/>
+</svg>
+                <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="15,1.5 18.75,11.25 28.5,11.25 20.25,17.25 23.25,27 15,20.25 6.75,27 9.75,17.25 1.5,11.25 11.25,11.25" fill="#FFD700" stroke="gray" stroke-width="0.5"/>
+</svg>
+                <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="15,1.5 18.75,11.25 28.5,11.25 20.25,17.25 23.25,27 15,20.25 6.75,27 9.75,17.25 1.5,11.25 11.25,11.25" fill="#FFD700" stroke="gray" stroke-width="0.5"/>
+</svg>
+                <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="15,1.5 18.75,11.25 28.5,11.25 20.25,17.25 23.25,27 15,20.25 6.75,27 9.75,17.25 1.5,11.25 11.25,11.25" fill="#FFD700" stroke="gray" stroke-width="0.5"/>
+</svg></div>
+           </div>
+            <div class="button1">
+                <button type="reset">Сбросить</button>
+            </div>
+            <div class="button2">
+                <button type="submit">Отправить</button>
+            </div>
+             </form>
+    </main>
+
+     <footer>
+         <p>© 2025 Pion.by | Все права защищены</p>
+        <p>Сайт создан с любовью к цветам &#127800</p>
+    </footer>
+
+    <script src="form.js"></script>
+    <script src="burger-menu.js"></script>
+    <script>   
+
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerCheckbox = document.getElementById('burger');
+    const label = document.querySelector('label');
+    
+    if (burgerCheckbox && label) {
+        const originalSpan = label.querySelector('span');
+        
+        burgerCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                // Меняем на крестик
+                originalSpan.innerHTML = "&#215";
+                originalSpan.style.fontSize = '90px';
+                originalSpan.style.display = 'inline-block';
+                  originalSpan.style.transform = 'translateY(0px)';
+            } else {
+                // Меняем обратно на три полосы
+                originalSpan.innerHTML = '&#8801';
+                originalSpan.style.fontSize = '90px';
+                originalSpan.style.transform = 'none';
+            }
+        });
+    }
+});
+    </script>
+</body>
+</html>

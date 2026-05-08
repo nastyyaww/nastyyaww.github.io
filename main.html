@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet">
     <link href="main-mobile.css" rel="stylesheet">
+    <link href="burger-menu.css" rel="stylesheet">
     <title>Главная</title>
 </head>
 <body>
@@ -12,12 +13,14 @@
         <input type="checkbox" id="burger"> 
         <label for="burger"><span>&#8801</span></label>
         <div class="burger-menu">
+        <div class="vnetri">
+        <div class="logo"><a href="main.html"><img src="pictures/logo.png"></a></div>
         <div class="menu-links">
-            <span><a href="katalog.html">каталог</a></span>
-            <span><a href="about.html">о нас</a></span>
-            <span><a href="special.html">спецпредложения</a></span>
-            <span><a href="">связаться с нами</a></span>
-        </div></div>
+            <span><a href="katalog.html">Каталог</a></span>
+            <span><a href="about.html">О нас</a></span>
+            <span><a href="special.html">Спецпредложения</a></span>
+            <span><a href="form.html">Связаться с нами</a></span>
+        </div></div></div>
     </header>
     <main>
         <div class="info">
@@ -50,13 +53,7 @@
                 </span>
             </div>
             <div class="button1">
-                <svg width="130" height="100">
-                    <rect x="0" y="0" width="130" height="100" fill="#FF8FA1" rx="30" rx="30"></rect>
-                    <line x1="30" y1="50" x2="100" y2="50" stroke="#ebdfcb" stroke-width="5" stroke-linecap="round"></line>
-                    <line x1="30" y1="50" x2="50" y2="30" stroke="#ebdfcb" stroke-width="5" stroke-linecap="round"></line>
-                    <line x1="30" y1="50" x2="50" y2="70" stroke="#ebdfcb" stroke-width="5" stroke-linecap="round"></line>
-                </svg>
-
+                <img src="pictures/button1.png">
             </div>
             <div>
                 <div class="kartinki">
@@ -64,12 +61,7 @@
                 </div>
             </div>
             <div class="button2">
-                <svg width="130" height="100">
-                    <rect x="0" y="0" width="130" height="100" fill="#FF8FA1" rx="30" rx="30"></rect>
-                    <line x1="30" y1="50" x2="100" y2="50" stroke="#ebdfcb" stroke-width="5" stroke-linecap="round"></line>
-                    <line x1="80" y1="30" x2="100" y2="50" stroke="#ebdfcb" stroke-width="5" stroke-linecap="round"></line>
-                    <line x1="80" y1="70" x2="100" y2="50" stroke="#ebdfcb" stroke-width="5" stroke-linecap="round"></line>
-                </svg>
+                <img src="pictures/button2.png">
             </div>
         </div>
 
@@ -82,5 +74,6 @@
         <p>Сайт создан с любовью к цветам &#127800</p>
     </footer>
     <script src="main.js"></script>
+    <script src="burger-menu.js"></script>
 </body>
 </html>

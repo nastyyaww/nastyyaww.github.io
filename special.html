@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Спецпредложения</title>
     <link href="special.css" rel="stylesheet">
+    <link href="burger-menu.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <input type="checkbox" id="burger"> 
         <label for="burger"><span>&#8801</span></label>
         <div class="burger-menu">
+        <div class="vnetri">
+        <div class="logo"><a href="main.html"><img src="pictures/logo.png"></a></div>
         <div class="menu-links">
-            <span><a href="main.html">главная</a></span>
-            <span><a href="katalog.html">каталог</a></span>
-            <span><a href="about.html">о нас</a></span>
-            <span><a href="">связаться с нами</a></span>
-        </div></div>
+            <span><a href="main.html">Главная</a></span>
+            <span><a href="katalog.html">Каталог</a></span>
+            <span><a href="about.html">О нас</a></span>
+            <span><a href="form.html">Связаться с нами</a></span>
+        </div></div></div>
     </header>
     <main>
     <div>
         <div>
             <img src="pictures/spec1.png">
-            <a href="zakaz.html"><button>Купить</button></a>
+            <a href="zakaz.html?image=spec1.png"><button>Купить</button></a>
             <p>
                 <span> Нежный сюрприз</span><br>
                 Очаровательный букет в розово‑белой гамме в паре с мягким плюшевым мишкой создаёт атмосферу тепла, заботы и искренних чувств. Идеально подходит для поздравления, для романтических моментов или служит приятным неожиданным подаркам.
@@ -31,7 +34,7 @@
        
         <div>
             <img src="pictures/spec2.png">
-            <a href="zakaz.html"><button>Купить</button></a>
+            <a href="zakaz.html?image=spec2.png"><button>Купить</button></a>
             <p>
                 <span>Сладкое признание</span><br>
                 Букет алых роз в паре с сердечным набором шоколадных конфет — символ нежности и романтики. Идеально подходит для проявления любви или для особых моментов.
@@ -39,7 +42,7 @@
         </div>
         <div>
             <img src="pictures/spec3.png">
-            <a href="zakaz.html"><button>Купить</button></a>
+            <a href="zakaz.html?image=spec3.png"><button>Купить</button></a>
                 <p>
                 <span> Тепло и забота</span><br>
                Нежная композиция из розовых и белых лилий, окружённая свечами и ангелом, символизирует спокойствие, любовь и поддержку. Идеально подходит для создания уюта и приятной атмосферы.
@@ -47,7 +50,7 @@
         </div>
         <div>
             <img src="pictures/spec4.png">
-            <a href="zakaz.html"><button>Купить</button></a>
+            <a href="zakaz.html?image=spec4.png"><button>Купить</button></a>
             <p>
                 <span> Зелёная коллекция</span><br>
                 Подборка стильных комнатных растений в разных кашпо создаёт атмосферу уюта, свежести и природной гармонии. Такой набор отлично подходит для обновления декора, интерьера или заботе о доме.
@@ -61,7 +64,7 @@
         <p>Сайт создан с любовью к цветам &#127800</p>
     </footer>
 
-
+    <script src="burger-menu.js"></script>
     <script>   
 document.addEventListener('DOMContentLoaded', function() {
     const burgerCheckbox = document.getElementById('burger');

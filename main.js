@@ -1,27 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const burgerCheckbox = document.getElementById('burger');
-    const label = document.querySelector('label');
-    
-    if (burgerCheckbox && label) {
-        const originalSpan = label.querySelector('span');
-        
-        burgerCheckbox.addEventListener('change', function() {
-            if (this.checked) {
-                // Меняем на крестик
-                originalSpan.innerHTML = "&#215";
-                originalSpan.style.fontSize = '90px';
-                originalSpan.style.display = 'inline-block';
-                  originalSpan.style.transform = 'translateY(0px)';
-            } else {
-                // Меняем обратно на три полосы
-                originalSpan.innerHTML = '&#8801';
-                originalSpan.style.fontSize = '90px';
-                originalSpan.style.transform = 'none';
-            }
-        });
-    }
-});
-
 /*кнопки */
 // Ждём загрузки DOM
 document.addEventListener('DOMContentLoaded', function() {

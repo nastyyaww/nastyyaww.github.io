@@ -11,12 +11,16 @@
 body{
     background-image: url(pictures/1.jpg);
     width: 100%;
-    margin-top:0;
-    background-size: cover; /* Изображение всегда покрывает весь элемент */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer{
@@ -48,34 +52,48 @@ label{
     font-size:90px;
     z-index: 10;
     padding-left: 10px;
+    visibility:hidden;
 }
 .burger-menu{
-    display: none; 
+    display: flex; 
     justify-self: flex-end;
     height: 100px;
-    width: 2000px;
+    width: 100vw;
     background-image: url(pictures/roses.jpg);
     background-size: contain; 
     background-position: center;
 
     z-index: 5;
-    opacity: 0;
+    
     transform: translateY(-90px);
     transition: all 0.1s ease;
 }
 
-.menu-links{
+.vnetri {
     display: flex;
-    position:sticky;
-    width: 90vw;
-    justify-self: left;
-    top:10px;
-    left:10px;
-    z-index: 15;
-
-    justify-content: left;
-    align-self: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 40px;
 }
+
+.logo {
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 
 .menu-links a{
     color: rgb(62, 5, 62);
@@ -89,10 +107,11 @@ label{
     padding: 0 20px 0 20px;
     font-size: 20px;
 }
-.menu-links span, label{
+/*.menu-links span, label{
     transform: translateY(10px);
 }
-input:checked~label{
+/*
+input:checked~label{    для бургер меню мобилка
     position: relative;
 }
 input:checked~.burger-menu{
@@ -100,21 +119,22 @@ input:checked~.burger-menu{
     transform:translateX(10px) translateY(-90px);
     opacity: 1;
 }
-
+*/
 main{
-    display:grid;
+    flex: 1;
+    display: grid;
     grid-row-gap: 15px;
     height: max-content;
     margin-top: 35px;
 }
 footer{
     height: 150px;
-    margin-top: 20px;
     background-color: white;
-    color:#823845;
+    color: #823845;
     text-align: center;
     font-size: 18px;
-    transform: translateY(20px);
+    margin-top: 0;
+    transform: none;
 }
 
 button{

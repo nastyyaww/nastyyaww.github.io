@@ -1,0 +1,99 @@
+@media (max-width: 768px) {
+    
+    label {
+        visibility: visible !important;
+        position: fixed;
+        top: 10px;
+        right: -40px;
+        z-index: 1001;
+        width: 50px;
+        height: 50px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size:50px;
+        margin-top: 0;
+        padding:20px ;
+}
+    
+    label span {
+        font-size: 80px !important;
+        transform: none !important;
+    }
+     
+    #burger {
+        visibility: hidden;
+        position: fixed;
+        top: -100px;
+    }
+    
+    .burger-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70% !important;
+        max-width: 280px;
+        height: 100vh;
+        background-image: url(pictures/roses.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: 1000;
+        transition: right 0.3s ease;
+        transform: none !important;
+        display: block !important;
+        box-shadow: -2px 0 15px rgba(0,0,0,0.2);
+    }
+    
+    .vnetri {
+        flex-direction: column;
+        padding-top: 80px;
+        align-items: center;
+        gap: 30px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    .logo {
+        transform: none !important;
+        margin-bottom: 20px;
+    }
+    
+    .menu-links {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        transform: none !important;
+        position: static;
+    }
+    
+    .menu-links span {
+        font-size: 22px !important;
+        padding: 8px 0 !important;
+    }
+    
+    .menu-links a {
+        font-size: 22px;
+    }
+    
+    .menu-links a:hover {
+        font-size: 26px !important;
+    }
+    
+    #burger:checked ~ .burger-menu {
+        right: 0;
+    }
+
+    
+    .no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+}

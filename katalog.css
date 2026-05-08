@@ -11,12 +11,16 @@
 body{
     background-image: url(pictures/1.jpg);
     width: 100%;
-    margin-top:0;
-    background-size: cover; /* Изображение всегда покрывает весь элемент */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer{
@@ -48,33 +52,45 @@ label{
     font-size:90px;
     z-index: 10;
     padding-left: 10px;
+    visibility:hidden;
 }
 .burger-menu{
-    display: none; 
+    display: flex; 
     justify-self: flex-end;
     height: 100px;
-    width: 2000px;
+    width: 100vw;
     background-image: url(pictures/roses.jpg);
     background-size: contain; 
     background-position: center;
-
     z-index: 5;
-    opacity: 0;
+    
     transform: translateY(-90px);
     transition: all 0.1s ease;
 }
 
-.menu-links{
+.vnetri {
     display: flex;
-    position:sticky;
-    width: 90vw;
-    justify-self: left;
-    top:10px;
-    left:10px;
-    z-index: 15;
+    align-items: center;
+    gap: 15px;
+    padding-left: 50px;
+}
 
-    justify-content: left;
-    align-self: center;
+.logo {
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .menu-links a{
@@ -89,32 +105,22 @@ label{
     padding: 0 20px 0 20px;
     font-size: 20px;
 }
-.menu-links span, label{
-    transform: translateY(10px);
-}
-input:checked~label{
-    position: relative;
-}
-input:checked~.burger-menu{
-    display:flex;
-    transform:translateX(10px) translateY(-90px);
-    opacity: 1;
-}
 
 main{
-    display:grid;
+    flex: 1;
+    display: grid;
     grid-row-gap: 15px;
     height: max-content;
     margin-top: 35px;
 }
 footer{
     height: 150px;
-    margin-top: 20px;
     background-color: white;
-    color:#823845;
+    color: #823845;
     text-align: center;
     font-size: 18px;
-    transform: translateY(20px);
+    margin-top: 50px;
+    transform: none;
 }
 .nazv{
     text-align: center;
@@ -128,9 +134,6 @@ footer{
     margin:0 0 10px 30px;
 }
 .category button{
-   position: sticky;
-   transform: translateY(-30px);
-   opacity: 0.7;
    background-color: plum;
    border:0px;
    font-size:18px;
@@ -139,6 +142,7 @@ footer{
    width: 150px;
    margin: 0 15%;
    border-radius: 15px;
+   z-index: 1;
    transition: all 1s ease;
 }
 
@@ -157,10 +161,16 @@ footer{
     grid-template-columns: repeat(5,1fr);
 }
 
-
 div img{
-    height: 240px;
-    width: 240px;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
-   
+}
+
+.bukety div, .svadebnie-bukety div ,.rasteniya div{
+    padding-bottom: 30px;
+}
+
+#bukety, #svadebnie-bukety, #rasteniya{
+    margin-top:30px;
 }
