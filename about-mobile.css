@@ -1,8 +1,35 @@
 @media(max-width: 768px){
-    /*p,span,li{
-        font-size: 20px!important;
-    }*/
-    main img{
+    p,span,li{
+        font-size: 22px!important;
+    }
+}
+
+
+@media(max-width: 855px){
+     main img{
        display: none;
     }
+}
+@media(min-width:855px) and (max-width:1150px){
+
+   main img{
+       height: 180px;
+       width: 150px;
+    }
+
+    .i1{
+    left: 65%;
+    top:43%;
+    animation: l-r 3s normal infinite;
+}
+.i2{
+    left: 75%;
+    top:65%;
+    animation: r-l 3s normal infinite;
+}
+.i3{
+    left: 55%;
+    top: 75%;
+    animation: l-r 3s normal infinite;
+}
 }

@@ -5,7 +5,7 @@
     .name{
         font-size:30px!important;
     }
-/* ===== УВЕЛИЧЕНИЕ КАРТИНОК НА МОБИЛКЕ ===== */
+
 @media (max-width: 768px) {
     /* Картинки */
     .bukety img,
