@@ -1,5 +1,9 @@
 @media (max-width: 768px) {
     
+     html, body {
+        overflow-x: hidden;
+        position: relative;
+    }
     label {
         visibility: visible !important;
         position: fixed;

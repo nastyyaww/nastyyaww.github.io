@@ -5,12 +5,37 @@
     .name{
         font-size:30px!important;
     }
-
-    .category>div {
-    display: grid;
-    width: 100%;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2,1fr);
+/* ===== УВЕЛИЧЕНИЕ КАРТИНОК НА МОБИЛКЕ ===== */
+@media (max-width: 768px) {
+    /* Картинки */
+    .bukety img,
+    .svadebnie-bukety img,
+    .rasteniya img {
+        width: 100%;
+        max-width: 180px;
+        height: 160px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    /* Кнопки под картинками */
+    .bukety button,
+    .svadebnie-bukety button,
+    .rasteniya button {
+        width: 145px;
+        height: 55px;
+        font-size: 18px;
+        margin-top: 10px;
+        
+       /* margin:10px 15px 0 15px; */
+    }
+    
+    /* Отступы между карточками */
+    .bukety > div,
+    .svadebnie-bukety > div,
+    .rasteniya > div {
+        padding-bottom: 20px;
+    }
 }
-
 }

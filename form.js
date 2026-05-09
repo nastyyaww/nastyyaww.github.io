@@ -26,3 +26,29 @@ document.querySelector('.button1 button[type="reset"]').addEventListener('click'
     setRating(0);
 });
 
+
+
+// Проверка email перед отправкой
+function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+// Проверка, что сообщение не пустое
+document.querySelector('form').addEventListener('submit', function(e) {
+    const email = document.getElementById('email').value;
+    const message = document.querySelector('textarea').value;
+    
+    if (!validateEmail(email)) {
+        alert('Введите корректный email');
+        e.preventDefault();
+        return false;
+    }
+    
+    if (!message.trim()) {
+        alert('Напишите сообщение');
+        e.preventDefault();
+        return false;
+    }
+    
+    alert('Спасибо за обращение!');
+});

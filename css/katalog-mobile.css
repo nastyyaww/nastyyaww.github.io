@@ -1,0 +1,52 @@
+.category .bukety,
+.category .svadebnie-bukety,
+.category .rasteniya {
+  display: grid;
+  gap: 20px;
+}
+@media (max-width: 549px) {
+  .category .bukety,
+  .category .svadebnie-bukety,
+  .category .rasteniya {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 550px) and (max-width: 1024px) {
+  .category .bukety,
+  .category .svadebnie-bukety,
+  .category .rasteniya {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .category .bukety,
+  .category .svadebnie-bukety,
+  .category .rasteniya {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.hity .items {
+  display: grid;
+  gap: 20px;
+}
+@media (max-width: 549px) {
+  .hity .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 550px) and (max-width: 1024px) {
+  .hity .items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .hity .items {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .hity .items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=katalog-mobile.css.map */

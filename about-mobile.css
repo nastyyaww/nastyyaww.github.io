@@ -1,0 +1,8 @@
+@media(max-width: 768px){
+    /*p,span,li{
+        font-size: 20px!important;
+    }*/
+    main img{
+       display: none;
+    }
+}

@@ -106,19 +106,7 @@ label{
     padding: 0 20px 0 20px;
     font-size: 20px;
 }
-/*.menu-links span, label{
-    transform: translateY(10px);
-}
-/*
-input:checked~label{    для бургер меню мобилка
-    position: relative;
-}
-input:checked~.burger-menu{
-    display:flex;
-    transform:translateX(10px) translateY(-90px);
-    opacity: 1;
-}
-*/
+
 main{
     flex: 1;
     display: grid;
@@ -235,12 +223,14 @@ main{
 }
 
 .button-catalog{
+    cursor:pointer;
     display: flex;
     width: 100%;
     align-content: center;
     justify-content: center;
 }
 .button-catalog button{
+    cursor:pointer;
     height: 100px;
     width:300px;
     font-family: 'alice';
