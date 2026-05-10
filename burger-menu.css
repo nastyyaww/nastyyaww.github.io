@@ -4,6 +4,9 @@
         overflow-x: hidden;
         position: relative;
     }
+    a{
+        text-decoration: none;
+    }
     label {
         visibility: visible !important;
         position: fixed;

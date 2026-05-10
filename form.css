@@ -94,7 +94,6 @@ label{
     gap: 20px;
 }
 
-
 .menu-links a{
     color: rgb(62, 5, 62);
      transition: font-size 1s ease;
@@ -107,19 +106,7 @@ label{
     padding: 0 20px 0 20px;
     font-size: 20px;
 }
-/*.menu-links span, label{
-    transform: translateY(10px);
-}
-/*
-input:checked~label{    для бургер меню мобилка
-    position: relative;
-}
-input:checked~.burger-menu{
-    display:flex;
-    transform:translateX(10px) translateY(-90px);
-    opacity: 1;
-}
-*/
+
 main{
     flex: 1;
     display: grid;
@@ -147,16 +134,18 @@ main label,input{
     visibility: visible;
 }
 
- .email, .xz{
+ .email{
     justify-self: center;
     align-self: center;
     padding-right: 60px;
 }
 
 .forma label{
-    font-size:40px;
+    font-size:35px;
     font-family: 'alice';
     margin-right: 20px;
+    width: auto;
+    text-align: center;
 } 
 .rating{
 display:block;
@@ -177,6 +166,7 @@ display:block;
     align-content: center;
     justify-content: center;
 }
+
 .button1 button, .button2 button{
     height: 100px;
     width:300px;
@@ -185,16 +175,9 @@ display:block;
     border-radius: 15px;
     background-color: rgb(255, 241, 223);
     border:1px solid rgb(117, 109, 109);
-    transition: all  3s ease;
+    cursor: pointer;
 }
 
-.button1 button:hover, .button2 button:hover{
-   background-color: #ffb3c0;
-   height: 100px;
-   width:350px;
-   font-weight: 10px;
-   font-size: 30px;
-}
 form{
    height:60vh;
     width:80vw; 
@@ -213,6 +196,6 @@ footer{
     color: #823845;
     text-align: center;
     font-size: 18px;
-    margin-top: 0;
+    margin-top: 30px;
     transform: none;
 }

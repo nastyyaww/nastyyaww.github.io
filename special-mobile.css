@@ -1,0 +1,46 @@
+@media(max-width: 768px) {
+    
+    main > div > div {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    div img {
+        height: 220px;
+        width: 220px;
+        margin: 0 auto;
+    }
+    
+    button {
+        margin: 10px auto;
+    }
+    
+    main p {
+        font-size: 25px;
+        width: auto;
+        
+    }
+    
+    main p span {
+        font-size: 30px;
+    }
+
+    .button{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 480px) {
+    main {
+        padding: 0 10px;
+    }
+    
+    div img {
+        height: 180px;
+        width: 180px;
+    }
+    
+    main p {
+        font-size: 20px;
+    }
+}
