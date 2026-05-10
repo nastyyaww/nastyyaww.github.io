@@ -148,16 +148,15 @@ div img{
 main p{
     width: auto;
     height: auto;
-   /* transform: translateX(-130px);*/
     font-family: 'alice';
-    font-size:22px;
+    font-size:25px;
     padding:0 20px;
 }
 
 
 main p span{
     font-weight: bold;
-    font-size:25px;
+    font-size: 30px;
 }
 main > div div{
     display: flex;
