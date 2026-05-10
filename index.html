@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт на GitHub Pages</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="main-mobile.css" rel="stylesheet">
+    <link href="burger-menu.css" rel="stylesheet">
+    <title>Главная</title>
 </head>
 <body>
-    <h1>Сайт успешно работает!</h1>
+    <header>
+        <input type="checkbox" id="burger"> 
+        <label for="burger"><span>&#8801</span></label>
+        <div class="burger-menu">
+        <div class="vnetri">
+        <div class="logo"><a href="index.html"><img src="pictures/logo.png"></a></div>
+        <div class="menu-links">
+            <span><a href="katalog.html">Каталог</a></span>
+            <span><a href="about.html">О нас</a></span>
+            <span><a href="special.html">Спецпредложения</a></span>
+            <span><a href="form.html">Связаться с нами</a></span>
+        </div></div></div>
+    </header>
+    <main>
+        <div class="info">
+           <p class="nazvanie">Pion.by</p> 
+        </div>
+
+        <div class="category">
+            <div class="nazv">
+                <span class="nazvanie">популярные категории</span>
+            </div>
+            <div class="category1">
+               <div><a href="katalog.html#bukety"><img src="pictures/buket.jpg"></a> </div>
+               <div><p class="nadpis">готовые букеты</p></div>
+            </div>
+            <div class="category2">
+                <div><a href="katalog.html#svadebnie-bukety"><img src="pictures/svadebnuy.jpg"></a></div>
+               <div><p class="nadpis">свадебные композиции</p></div>
+            </div>
+            <div class="category3">
+                <div><a href="katalog.html#rasteniya"><img src="pictures/rasteniye.jpg"></a></div>
+               <div><p class="nadpis">комнатные растения</p></div>
+            </div>
+        </div>
+
+
+        <div class="hity">
+            <div class="nazv">
+                <span class="nazvanie">
+                    Хиты продаж
+                </span>
+            </div>
+            <div class="button1">
+                <img src="pictures/button1.png">
+            </div>
+            <div>
+                <div class="kartinki">
+                    <img src="pictures/b2.png">
+                </div>
+            </div>
+            <div class="button2">
+                <img src="pictures/button2.png">
+            </div>
+        </div>
+
+        <div class="button-catalog">
+            <a href="katalog.html"><button>перейти к каталогу</button></a>
+        </div>
+    </main>
+    <footer>
+         <p>© 2026 Pion.by | Все права защищены</p>
+        <p>Сайт создан с любовью к цветам &#127800</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="burger-menu.js"></script>
 </body>
 </html>
