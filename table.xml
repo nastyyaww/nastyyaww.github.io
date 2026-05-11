@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet 
+ type="text/css"
+ href="table.css"?>
+<table>
+    <stroka>
+        <name>Белоснежные каллы с жемчугом</name>
+        <description>Элегантный свадебный букет из белых калл, украшенный жемчужной лентой</description>
+        <price>115 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Нежные белые тюльпаны</name>
+        <description>Букет из белых тюльпанов с натуральной бечевкой</description>
+        <price>92 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Розы с персиковым оттенком</name>
+        <description>Букет из белых и нежно-персиковых роз в крафтовой упаковке</description>
+        <price>138 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Розовые пионы в пленке</name>
+        <description>Пышный букет из розовых пионов в нежной розовой упаковке</description>
+        <price>180 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Розовые лилии</name>
+        <description>Стильный букет из розовых лилий с белой лентой</description>
+        <price>128 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Лилии с розами и гипсофилой</name>
+        <description>Романтичный букет из розовых лилий, роз и гипсофилы с бантом</description>
+        <price>157 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Пастельный микс</name>
+        <description>Нежный букет в пудровых тонах с эвкалиптом и шелковой лентой</description>
+        <price>170 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Розовые гвоздики и эвкалипт</name>
+        <description>Букет из розовых гвоздик и зелени в розовой упаковке</description>
+        <price>102 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Светло-розовые пионы</name>
+        <description>Монобукет из нежно-розовых пионов с открытыми стеблями</description>
+        <price>154 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Тюльпаны с гипсофилой</name>
+        <description>Весенний букет из розовых и белых тюльпанов с гипсофилой</description>
+        <price>98 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Микс пионов (белый и розовый)</name>
+        <description>Яркий букет из белых и розовых пионов, перевязанный джутом</description>
+        <price>195 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Свадебный микс с лилиями</name>
+        <description>Букет невесты с белыми лилиями, розами и зеленью</description>
+        <price>210 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Белоснежный букет с кружевом</name>
+        <description>Изысканный белый букет с кружевной лентой и зеленью</description>
+        <price>185 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Белый букет с бантом</name>
+        <description>Классический букет из белых роз и мелких цветов с атласным бантом</description>
+        <price>160 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Антуриум в горшке</name>
+        <description>Комнатное растение с красными цветами в терракотовом горшке</description>
+        <price>65 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Сукулент в керамике</name>
+        <description>Небольшой суккулент в белом керамическом горшке</description>
+        <price>45 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Каллы в горшке</name>
+        <description>Розовые каллы в бирюзовом горшке</description>
+        <price>55 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Калатея в рифленом горшке</name>
+        <description>Декоративное растение с широкими листьями в розовом горшке</description>
+        <price>70 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Монстера в бетонном горшке</name>
+        <description>Крупное растение монстера в сером бетонном горшке</description>
+        <price>90 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Набор мини-растений</name>
+        <description>Набор из нескольких миниатюрных растений в горшках</description>
+        <price>120 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Букет с орхидеями и мишкой</name>
+        <description>Роскошный букет с орхидеями и плюшевым медвежонком</description>
+        <price>250 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Красные розы с шоколадом</name>
+        <description>Букет из алых роз в сочетании с коробкой конфет в форме сердца</description>
+        <price>180 BYN</price>
+    </stroka>
+    <stroka>
+        <name>Лилии со свечами и ангелом</name>
+        <description>Букет из лилий с декоративными свечами и фигуркой ангела</description>
+        <price>220 BYN</price>
+    </stroka>
+</table>

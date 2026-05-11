@@ -1,0 +1,42 @@
+*{
+    padding: 10px;
+}
+
+table{
+    margin:10px 0 0 10px;
+    display:table;
+}
+
+stroka{
+    display: table-row;
+    margin-top: 5px;
+    border:2px black solid;
+}
+
+name,img,description,price{
+    display: table-cell;
+    border:2px black solid;
+}
+
+name{
+    width: auto;
+    text-align: center;
+}
+
+img {
+    display: table-cell;
+    border: 2px black solid;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    content: attr(src);
+}
+
+description{
+    width: 60%;
+}
+
+price{
+    width: 100px;
+    text-align: center;
+}
