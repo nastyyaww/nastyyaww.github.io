@@ -114,7 +114,9 @@ main{
     height: max-content;
     margin: 35px 0;
 }
-
+a{
+    text-decoration: none;
+}
 .info > .nazvanie{
     text-align: center;
     font-size:90px;

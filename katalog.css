@@ -2,7 +2,10 @@
     font-family: alice;
     src: url(text-style/Alice.ttf) format('truetype');
 }
-
+@font-face {
+    font-family: muller;
+    src: url(text-style/muller.ttf) format('truetype');
+}
 body{
     background-image: url(pictures/1.jpg);
     width: 100%;
@@ -143,6 +146,7 @@ a{
     z-index: 1;
     text-decoration: none;
     display: block;
+    font-family: muller;
     margin: 10px auto !important;
     position: static;
     transition: all 1s ease;

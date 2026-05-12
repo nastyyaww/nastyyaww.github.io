@@ -1,18 +1,57 @@
+@font-face {
+    font-family: alice;
+    src: url(text-style/Alice.ttf) format('truetype');
+}
+@font-face {
+    font-family: muller;
+    src: url(text-style/muller.ttf) format('truetype');
+}
+@font-face {
+    font-family: days2;
+    src: url(text-style/days2.ttf) format('truetype');
+}
+@font-face {
+    font-family: appetite;
+    src: url(text-style/appetite.ttf) format('truetype');
+}
+@font-face {
+    font-family: made;
+    src: url(text-style/madelikesslab.ttf) format('truetype');
+}
+
 *{
     padding: 10px;
+    font-family: made;
+    font-size: 20px;
+    display: flexbox;
+    justify-content: center;
+    align-content:center
 }
 
 table{
     margin:10px 0 0 10px;
     display:table;
+    width: 80vw;
 }
 
-stroka{
+fstroka, stroka{
     display: table-row;
     margin-top: 5px;
     border:2px black solid;
 }
 
+fstroka{
+    background-color: rgba(255, 228, 196, 0.786);
+}
+stroka > name{
+    background-color: rgba(248, 242, 242, 0.786);
+}
+stroka > description{
+    background-color: rgba(255, 139, 185, 0.786);
+}
+stroka > price{
+    background-color: rgba(185, 252, 242, 0.786);
+}
 name,img,description,price{
     display: table-cell;
     border:2px black solid;
@@ -35,8 +74,16 @@ img {
 description{
     width: 60%;
 }
-
+fstroka description{
+    text-align: center;
+}
 price{
     width: 100px;
     text-align: center;
+}
+
+@media (max-width:480px) {
+    *{
+    font-size: 17px;
+}
 }

@@ -3,10 +3,6 @@
     src: url(text-style/Alice.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: jsmath;
-    src: url(text-style/jsmath-cmti10.ttf) format('truetype');
-}
 @keyframes l-r {
     0%  {transform: rotate(0deg);}
     25% {transform: rotate(25deg);}
@@ -108,7 +104,7 @@ label{
 
 .menu-links a{
     color: rgb(62, 5, 62);
-     transition: font-size 1s ease;
+    transition: font-size 1s ease;
 }
 .menu-links a:hover{
     font-size: 25px;
@@ -136,7 +132,9 @@ footer{
     margin-top: 0;
     transform: none;
 }
-
+a{
+    text-decoration: none;
+}
 main img{
     height: 200px;
     width: 230px;

@@ -2,18 +2,7 @@
     font-family: alice;
     src: url(text-style/Alice.ttf) format('truetype');
 }
-@font-face {
-    font-family: muller;
-    src: url(text-style/muller.ttf) format('truetype');
-}
-@font-face {
-    font-family: days2;
-    src: url(text-style/days2.ttf) format('truetype');
-}
-@font-face {
-    font-family: appetite;
-    src: url(text-style/appetite.ttf) format('truetype');
-}
+
 body{
     background-image: url(pictures/1.jpg);
     width: 100%;
@@ -121,6 +110,9 @@ main{
     height: max-content;
     margin-top: 35px;
 }
+a{
+    text-decoration: none;
+}
 footer{
     height: 150px;
     background-color: white;
@@ -129,55 +121,4 @@ footer{
     font-size: 18px;
     margin-top: 30px;
     transform: none;
-}
-a{
-    text-decoration: none;
-}
-button{
-   background-color: plum;
-   border:0px;
-   font-size:18px;
-   color:white;
-   height: 50px;
-   width: 150px;
-   border-radius: 15px;
-   font-family: muller;
-   transition: all 1s ease;
-}
-
- button:hover{
-   background-color: rgb(218, 145, 218);
-   height: 70px;
-   width: 200px;
-   opacity: 0.9;
-}
-
-div img{
-    height: 240px;
-    width: 240px;
-    margin-left: 10px;
-    object-fit: contain;  
-}
-
-main p{
-    width: auto;
-    height: auto;
-    font-family: 'alice';
-    font-size:25px;
-    padding:0 20px;
-}
-
-
-main p span{
-    font-weight: bold;
-    font-size: 30px;
-}
-main > div div{
-    display: flex;
-    margin-top: 20px;
-}
-
-
-.button{
-    margin-left:50px;
 }
