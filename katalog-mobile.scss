@@ -14,9 +14,7 @@
     }
 }
 
-.category .bukety,
-.category .svadebnie-bukety,
-.category .rasteniya {
+.category .bukety, .category .svadebnie-bukety,.category .rasteniya {
     @include grid-catalog;
 }
 

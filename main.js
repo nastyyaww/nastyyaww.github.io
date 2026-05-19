@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Массив с путями к картинкам
     const images = [
         "pictures/b2.png",
         "pictures/h2.png",
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateImage();
     });
     
-    // Добавляем визуальный эффект при наведении на кнопки
     leftButton.style.cursor = 'pointer';
     rightButton.style.cursor = 'pointer';
 });

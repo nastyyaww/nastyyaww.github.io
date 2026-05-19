@@ -11,15 +11,16 @@
 <body>
     <header>
         <input type="checkbox" id="burger"> 
-        <label for="burger"><span>&#8801</span></label>
+        <label for="burger"><span>&#8801;</span></label>
         <div class="burger-menu">
         <div class="vnetri">
-        <div class="logo"><a href="index.html"><img src="pictures/logo.png"></a></div>
+        <div class="logo"><a href="index.html"><img src="pictures/logo.png" alt="букет"></a></div>
         <div class="menu-links">
             <span><a href="index.html">Главная</a></span>
             <span><a href="katalog.html">Каталог</a></span>
             <span><a href="about.html">О нас</a></span>
             <span><a href="special.html">Спецпредложения</a></span>
+             <span><a href="price.html">Цены</a></span>
         </div></div></div>
     </header>
 
@@ -64,36 +65,11 @@
 
      <footer>
          <p>© 2026 Pion.by | Все права защищены</p>
-        <p>Сайт создан с любовью к цветам &#127800</p>
+        <p>Сайт создан с любовью к цветам &#127800;</p>
     </footer>
 
     <script src="form.js"></script>
     <script src="burger-menu.js"></script>
-    <script>   
 
-document.addEventListener('DOMContentLoaded', function() {
-    const burgerCheckbox = document.getElementById('burger');
-    const label = document.querySelector('label');
-    
-    if (burgerCheckbox && label) {
-        const originalSpan = label.querySelector('span');
-        
-        burgerCheckbox.addEventListener('change', function() {
-            if (this.checked) {
-                // Меняем на крестик
-                originalSpan.innerHTML = "&#215";
-                originalSpan.style.fontSize = '90px';
-                originalSpan.style.display = 'inline-block';
-                  originalSpan.style.transform = 'translateY(0px)';
-            } else {
-                // Меняем обратно на три полосы
-                originalSpan.innerHTML = '&#8801';
-                originalSpan.style.fontSize = '90px';
-                originalSpan.style.transform = 'none';
-            }
-        });
-    }
-});
-    </script>
 </body>
 </html>

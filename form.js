@@ -20,20 +20,15 @@ stars.forEach((star, index) => {
         setRating(index + 1);
     });
 });
-
-
 document.querySelector('.button1 button[type="reset"]').addEventListener('click', function() {
     setRating(0);
 });
 
 
-
-// Проверка email перед отправкой
 function validateEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-// Проверка, что сообщение не пустое
 document.querySelector('form').addEventListener('submit', function(e) {
     const email = document.getElementById('email').value;
     const message = document.querySelector('textarea').value;

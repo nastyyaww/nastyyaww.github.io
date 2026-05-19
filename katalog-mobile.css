@@ -7,7 +7,6 @@
     }
 
 @media (max-width: 768px) {
-    /* Картинки */
     .bukety img,
     .svadebnie-bukety img,
     .rasteniya img {
@@ -19,7 +18,6 @@
         margin: 0 auto;
     }
     
-    /* Кнопки под картинками */
     .bukety button,
     .svadebnie-bukety button,
     .rasteniya button {
@@ -28,10 +26,8 @@
         font-size: 18px;
         margin-top: 10px;
         
-       /* margin:10px 15px 0 15px; */
     }
     
-    /* Отступы между карточками */
     .bukety > div,
     .svadebnie-bukety > div,
     .rasteniya > div {

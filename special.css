@@ -6,14 +6,6 @@
     font-family: muller;
     src: url(text-style/muller.ttf) format('truetype');
 }
-@font-face {
-    font-family: days2;
-    src: url(text-style/days2.ttf) format('truetype');
-}
-@font-face {
-    font-family: appetite;
-    src: url(text-style/appetite.ttf) format('truetype');
-}
 body{
     background-image: url(pictures/1.jpg);
     width: 100%;

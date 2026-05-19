@@ -10,10 +10,10 @@
 <body>
     <header>
         <input type="checkbox" id="burger"> 
-        <label for="burger"><span>&#8801</span></label>
+        <label for="burger"><span>&#8801;</span></label>
         <div class="burger-menu">
         <div class="vnetri">
-        <div class="logo"><a href="index.html"><img src="pictures/logo.png"></a></div>
+        <div class="logo"><a href="index.html"><img src="pictures/logo.png" alt="букет"></a></div>
         <div class="menu-links">
             <span><a href="index.html">Главная</a></span>
             <span><a href="katalog.html">Каталог</a></span>
@@ -27,24 +27,21 @@
     </main>
      <footer>
          <p>© 2026 Pion.by | Все права защищены</p>
-        <p>Сайт создан с любовью к цветам &#127800</p>
+        <p>Сайт создан с любовью к цветам &#127800;</p>
     </footer>
 
     <script href="burger-menu.js"></script>
     <script>
-        // Поддерживает: атрибут tag, текстовое содержимое, атрибут code
 function processImageTags(xmlDoc, imageMap) {
-    // Вариант 1: По атрибуту tag
+
     const byTagAttr = xmlDoc.querySelectorAll("image[tag]");
     byTagAttr.forEach(el => replaceWithImage(el, el.getAttribute("tag"), imageMap));
     
-    // Вариант 2: По текстовому содержимому (<image>cat_001</image>)
     const byText = Array.from(xmlDoc.querySelectorAll("image")).filter(el => 
         el.textContent.trim() && !el.hasAttribute("tag")
     );
     byText.forEach(el => replaceWithImage(el, el.textContent.trim(), imageMap));
     
-    // Вариант 3: По атрибуту code
     const byCode = xmlDoc.querySelectorAll("image[code]");
     byCode.forEach(el => replaceWithImage(el, el.getAttribute("code"), imageMap));
 }
@@ -56,11 +53,9 @@ function replaceWithImage(element, tag, imageMap) {
         img.alt = tag;
         img.className = "xml-image";
         
-        // Сохраняем оригинальные атрибуты
         if (element.hasAttribute("width")) {
             img.width = element.getAttribute("width");
         }
-        
         element.parentNode.replaceChild(img, element);
     } else {
         console.warn(`Изображение для метки "${tag}" не найдено`);

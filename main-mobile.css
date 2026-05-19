@@ -1,6 +1,5 @@
 @media(max-width: 768px) {
     
-    /* Категории — 3 ряда по 1 колонке (вертикально) */
     .category {
         display: flex;
         flex-direction: column;
@@ -20,7 +19,6 @@
         
     }
     
-    /* Каждая категория — отдельный блок по центру */
     .category1, .category2, .category3 {
         width: 100%;
         display: flex;
@@ -49,15 +47,13 @@
     .hity .nazv .nazvanie {
         font-size: 40px;
     }
-    
-    /* Слайдер — центрируем */
+
     .hity > div {
         display: flex;
         justify-content: center;
         margin: 0 auto;
     }
     
-    /* Контейнер с картинкой */
     .kartinki {
         width: 60vw;
         height: 230px;

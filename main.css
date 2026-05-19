@@ -3,11 +3,6 @@
     src: url(text-style/Alice.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: jsmath;
-    src: url(text-style/jsmath-cmti10.ttf) format('truetype');
-}
-
 body{
     background-image: url(pictures/1.jpg);
     width: 100%;
@@ -271,10 +266,6 @@ footer{
     transform: none;
 }
 
-
-
-
-/*дж кнопки*/
 .kartinki img {
     transition: opacity 0.3s ease-in-out;
 }

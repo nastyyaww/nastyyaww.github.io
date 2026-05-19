@@ -18,20 +18,17 @@
     </div>
 
     <script>
-        // Получаем параметры из URL
         const urlParams = new URLSearchParams(window.location.search);
         const productImage = urlParams.get('image');
         
         const productDiv = document.getElementById('productInfo');
         
         if (productImage) {
-            // Отображаем заказанный товар
             productDiv.innerHTML = `
                 <h3>Ваш заказ:</h3>
                 <img src="pictures/${productImage}" class="order-image">
             `;
         } else {
-            // Если зашли напрямую без параметров
             productDiv.innerHTML = `
                 <p class="fallback">Спасибо за доверие к нашему сервису! 🌸</p>
             `;

@@ -6,14 +6,7 @@
     font-family: muller;
     src: url(text-style/muller.ttf) format('truetype');
 }
-@font-face {
-    font-family: days2;
-    src: url(text-style/days2.ttf) format('truetype');
-}
-@font-face {
-    font-family: appetite;
-    src: url(text-style/appetite.ttf) format('truetype');
-}
+
 @font-face {
     font-family: made;
     src: url(text-style/madelikesslab.ttf) format('truetype');
