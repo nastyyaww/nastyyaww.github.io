@@ -1,0 +1,297 @@
+@font-face {
+    font-family: alice;
+    src: url(text-style/Alice.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: jsmath;
+    src: url(text-style/jsmath-cmti10.ttf) format('truetype');
+}
+
+body{
+    background-image: url(pictures/1.jpg);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    height: 70px;
+    width: 100%;
+    
+    align-content:center;
+}
+
+header{
+    transform: translateY(-20px);
+}
+#burger-menu{
+font-size:50px;
+font-weight: 50;
+margin-right: 10px;
+}
+
+input{
+    visibility: hidden;
+    position: absolute;
+
+}
+label{
+    display: flex;
+    top:5px;
+    justify-self: right;
+    margin-right: 30px;
+    font-size:90px;
+    z-index: 10;
+    padding-left: 10px;
+    visibility:hidden;
+}
+.burger-menu{
+    display: flex; 
+    justify-self: flex-end;
+    height: 100px;
+    width: 100vw;
+    background-image: url(pictures/roses.jpg);
+    background-size: contain; 
+    background-position: center;
+
+    z-index: 5;
+    
+    transform: translateY(-90px);
+    transition: all 0.1s ease;
+}
+
+.vnetri {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-links a{
+    color: rgb(62, 5, 62);
+     transition: font-size 1s ease;
+}
+.menu-links a:hover{
+    font-size: 25px;
+}
+.menu-links span{
+    align-self: center;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+
+main{
+    flex: 1;
+    display: grid;
+    grid-row-gap: 15px;
+    height: max-content;
+    margin: 35px 0;
+}
+
+.info > .nazvanie{
+    text-align: center;
+    font-size:90px;
+    margin: 0;
+    font-family: 'Alice';
+    color:rgb(253, 225, 241);
+    -webkit-text-stroke: 1px rgb(63, 63, 63);
+    text-shadow: 5px 6px 6px rgb(78, 172, 230) ;
+}
+
+
+.info{
+    width:87%;
+    height: 130px;
+    justify-self:center;
+    align-content: center;
+    background-image: url(pictures/pion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.category{
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-rows: 110px 290px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.category .nazv{
+    grid-column: span 3;
+    justify-self:center;
+    align-content: center;
+}
+ .nazvanie{
+    font-size:60px;
+    text-align: center;
+    font-family: 'Alice';
+    align-content: center;
+}
+
+.category div div{
+    display: flex;
+    justify-self: center;
+    align-content: center;
+}
+.category img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 240px;
+    width: 240px;
+    object-position: 100% 20%;
+    transition:box-shadow 1s ease; 
+}
+.category img:hover{
+    box-shadow: 5px 5px 5px rgb(141, 125, 125);
+}
+.category1,.category2, .category3{
+    height: max-content;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+}
+
+.nadpis{
+    font-family: 'Alice';
+    font-size: 25px;
+    color:black;
+    margin-top:15px;
+    text-align: center;
+}
+
+
+.hity{
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-rows: 110px 290px;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.hity .nazv{
+    grid-column: span 3;
+}
+
+.hity div{
+    justify-self: center;
+    align-self:center ;
+}
+
+.kartinki{
+    width: 420px;
+    height: 270px;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+.kartinki > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.button-catalog{
+    cursor:pointer;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.button-catalog button{
+    cursor:pointer;
+    height: 100px;
+    width:300px;
+    font-family: 'alice';
+    font-size: 25px;
+    border-radius: 15px;
+    background-color: rgb(255, 241, 223);
+    border:1px solid rgb(117, 109, 109);
+    transition: all  3s ease;
+}
+
+.button-catalog button:hover{
+   background-color: #ffb3c0;
+   height: 100px;
+   width:350px;
+   font-weight: 10px;
+   font-size: 35px;
+}
+
+.button-catalog a button{
+    text-decoration: none;
+    color:black;
+    transition: all  3s ease;
+}
+
+.button-catalog a button:hover{
+    text-shadow: 0px 0px 10px rgb(160, 33, 33);
+}
+
+footer{
+    height: 150px;
+    background-color: white;
+    color: #823845;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
+    transform: none;
+}
+
+
+
+
+/*дж кнопки*/
+.kartinki img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.button1 img, .button2 img{
+    height: 100px;
+    width: 130px;
+}
+.button1, .button2{
+    height: 100px;
+    width: 130px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button1:hover, .button2:hover {
+    transform: scale(1.05);
+}
+
+.button1:active, .button2:active {
+    transform: scale(0.95);
+}

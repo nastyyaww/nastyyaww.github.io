@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ</title>
+    <link href="zakaz.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="icon">✅</div>
+        <p>Ваш заказ поступил в обработку и скоро прибудет к Вам</p>
+        <p>Спасибо, что доверяете нам!</p>
+        
+        <div id="productInfo" class="product-info"></div>
+        
+        <p>Сейчас Вы можете перейти в раздел <a href="main.html">главное</a> или <a href="katalog.html">каталог</a></p>
+    </div>
+
+    <script>
+        // Получаем параметры из URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productImage = urlParams.get('image');
+        
+        const productDiv = document.getElementById('productInfo');
+        
+        if (productImage) {
+            // Отображаем заказанный товар
+            productDiv.innerHTML = `
+                <h3>Ваш заказ:</h3>
+                <img src="pictures/${productImage}" class="order-image">
+            `;
+        } else {
+            // Если зашли напрямую без параметров
+            productDiv.innerHTML = `
+                <p class="fallback">Спасибо за доверие к нашему сервису! 🌸</p>
+            `;
+        }
+    </script>
+</body>
+</html>

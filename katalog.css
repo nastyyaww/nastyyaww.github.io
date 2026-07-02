@@ -1,0 +1,182 @@
+@font-face {
+    font-family: alice;
+    src: url(text-style/Alice.ttf) format('truetype');
+}
+
+body{
+    background-image: url(pictures/1.jpg);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    height: 70px;
+    width: 100%;
+    
+    align-content:center;
+}
+
+header{
+    transform: translateY(-20px);
+}
+#burger-menu{
+font-size:50px;
+font-weight: 50;
+margin-right: 10px;
+}
+
+input{
+    visibility: hidden;
+    position: absolute;
+
+}
+label{
+    display: flex;
+    top:5px;
+    justify-self: right;
+    margin-right: 30px;
+    font-size:90px;
+    z-index: 10;
+    padding-left: 10px;
+    visibility:hidden;
+}
+.burger-menu{
+    display: flex; 
+    justify-self: flex-end;
+    height: 100px;
+    width: 100vw;
+    background-image: url(pictures/roses.jpg);
+    background-size: contain; 
+    background-position: center;
+    z-index: 5;
+    
+    transform: translateY(-90px);
+    transition: all 0.1s ease;
+}
+
+.vnetri {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-links a{
+    color: rgb(62, 5, 62);
+     transition: font-size 1s ease;
+}
+.menu-links a:hover{
+    font-size: 25px;
+}
+.menu-links span{
+    align-self: center;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+
+main{
+    flex: 1;
+    display: grid;
+    grid-row-gap: 15px;
+    height: max-content;
+    margin-top: 35px;
+}
+footer{
+    height: 150px;
+    background-color: white;
+    color: #823845;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    transform: none;
+}
+.nazv{
+    text-align: center;
+    font-size: 90px;
+    font-family: 'alice';
+    margin: 0;
+}
+.name{
+    font-family: 'alice';
+    font-size:40px;
+    margin:0 0 10px 30px;
+}
+
+a{
+    text-decoration: none;
+}
+.category button{
+    background-color: plum;
+    border:0px;
+    font-size:18px;
+    color:white;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    z-index: 1;
+    text-decoration: none;
+    display: block;
+    margin: 10px auto !important;
+    position: static;
+    transition: all 1s ease;
+}
+
+.category button:hover{
+   background-color: rgb(218, 145, 218);
+   height: 70px;
+   width: 200px;
+   position: static;
+   transform: scale(1.05);
+   margin: 10px auto !important;
+}
+
+.bukety div,
+    .svadebnie-bukety div,
+    .rasteniya div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+div img{
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+
+.bukety div, .svadebnie-bukety div ,.rasteniya div{
+    padding-bottom: 30px;
+}
+
+#bukety, #svadebnie-bukety, #rasteniya{
+    margin-top:30px;
+}

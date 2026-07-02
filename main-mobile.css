@@ -1,0 +1,117 @@
+@media(max-width: 768px) {
+    
+    /* Категории — 3 ряда по 1 колонке (вертикально) */
+    .category {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 30px;
+        margin: 20px 0;
+    }
+    
+    .category .nazv {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .category .nazv .nazvanie {
+        font-size: 50px ;
+        
+    }
+    
+    /* Каждая категория — отдельный блок по центру */
+    .category1, .category2, .category3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nadpis{
+        font-size: 35px;
+    }
+ .hity > div:not(.nazv)  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .hity .nazv {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hity .nazv .nazvanie {
+        font-size: 40px;
+    }
+    
+    /* Слайдер — центрируем */
+    .hity > div {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    /* Контейнер с картинкой */
+    .kartinki {
+        width: 60vw;
+        height: 230px;
+    }
+    
+    .kartinki img {
+        width: 100%;
+        height: 100%;
+        
+    }
+        
+    .button1 img, .button2 img{
+    height: 60px;
+    width: 90px;
+}
+.button1, .button2{
+    height: 60px;
+    width: 90px;
+}
+
+.button-catalog button {
+        width: 230px;
+        height: 105px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .nazvanie{
+        font-size: 60px!important;
+    }
+
+    .category .nazv .nazvanie {
+        font-size: 45px!important;
+    }
+
+    .nadpis{
+        font-size: 25px;
+    }
+.kartinki {
+        width: 50vw;
+        height: 230px;
+    }
+    .button1 img, .button2 img{
+    height: 50px;
+    width: 70px;
+}
+.button1, .button2{
+    height: 50px;
+    width: 70px;
+}
+
+.hity .nazv .nazvanie {
+        font-size: 45px!important;
+    }
+}
